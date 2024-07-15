@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans{
+  font-family: "Work Sans";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*=========================== shared code============================*/
+.display-flex{
+    display: flex;
+}
+/* dark-02 */
+.text-gray{
+    color: #424242;
+}
+/* dark-03 */
+.text-gray-light{
+    color: #727272;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 7rem;
+}
+
+
+/*  ======================== navbar related  code============================== */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.nav-links{
+    
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* ======================== banner related code================================== */
+.banner-content{
+    max-width: 53.123rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3.1rem;
+}
+.banner-title{
+    color: rgb(19, 19, 19);
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-des{
+    font-size: 1rem;
+}
+.btn-primary{
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+    padding: 1.3rem 1.5rem;
+    background-color: rgb(255, 144, 14);
+    border-radius: 0.5rem;
+    border: none;
+}
+.banner-image{
+    width: 100%;
+}
+
+/* ============================ Team and features related code========================================== */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.our-features{
+    margin-left: 8rem;
+    width: 33rem;
+    margin-bottom: 1.75rem;
+}
+.f-t-1{
+    font-size: 2.9rem;
+    font-weight: 600;
+    color: rgb(114, 114, 114);
+}
+.f-t-2{
+    font-size: 2.9rem;
+    font-weight: 800;
+    color: rgb(19, 19, 19);
+}
+.f-t-3{
+    font-size: 2.9rem;
+    font-weight: 800;
+    color: rgb(255, 144, 14);
+}
+.features-des{
+    width: 33rem;
+}
+
+ /*================================= Features eill enjoy section related ================================== */
+
+ .section-title{
+    Font-weight: 700;
+    Font-size: 45px;
+ }
+ .section-des{
+    font-weight: 400;
+    font-size: 1rem;
+    width: 33rem;
+ }
+ .facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7.75rem;
+    justify-content: center;
+    
+}
+
+ .fact{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width: 14rem;
+    height: 14rem;
+    padding: 2.8rem 2.25rem 3rem 2.25rem;
+
+}
+.fact-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.fact-number{    
+    Font-weight:600;
+    Font-size:45px;
+    margin: 10px auto 5px;
+}
+.fact-name{
+    Font-weight:600;
+    Font-size:20px;
+}
+
+/* ======================================= Sponsor related code============================================== */
+.sponsor-info{
+    max-width: 1440px;
+    margin: 50 auto;
+    text-align: center;
+}
+
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-companies img{
+    filter: grayscale(100%);
+}
+
+
+
+
+
+
+/* =========================Responsive media quarey================================= */
+@media screen and (max-width :576px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        width: 20rem;
+        margin-bottom: 1.75rem;
+        margin: 0 auto;
+    }
+    .feature-injoy-section{
+        margin: 0 auto;
+    }
+    .features-des {
+        width: 22rem;
+    }
+    .facts-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section-title {
+        Font-weight: 700;
+        Font-size: 35px;
+        width: 80%;
+        margin: 4rem auto 10px;
+    }
+    .section-des {
+        font-weight: 400;
+        font-size: 1rem;
+        width: 80%;
+        margin: 0 auto 0.8rem;
+    }
+    .sponsor-info{
+        max-width: 90%;
+        text-align: center;
+    }
+    .sponsor-companies {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+}
+
+
+
+
+
+
+@media screen and (min-width :577px) and (max-width :992px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        width: 20rem;
+        margin-bottom: 1.75rem;
+        margin: 0 auto;
+    }
+    .facts-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7.75rem;
+    }
+    .section-title {
+        Font-weight: 700;
+        Font-size: 35px;
+    }
+    .section-des {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width :993px) and (max-width :1440px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .our-features{
+        width: 40rem;
+        margin-bottom: 1.75rem;
+        margin: 0 auto;
+    }
+    .facts-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7.75rem;
+    }
+    .section-title {
+        Font-weight: 700;
+        Font-size: 35px;
+    }
+    .section-des {
+        font-weight: 400;
+        font-size: 1rem;
+        width: auto;
+    }
+    
+}
