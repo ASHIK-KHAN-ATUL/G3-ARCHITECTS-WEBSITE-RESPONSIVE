@@ -249,18 +249,31 @@ main > section{
         margin-bottom: 1.75rem;
         margin: 0 auto;
     }
+    .features-des {
+        width: 22rem;
+    }
     .facts-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 7.75rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin-left: 10rem;
     }
     .section-title {
         Font-weight: 700;
         Font-size: 35px;
+        width: auto;
+        text-align: center;
+        margin-left: auto;
     }
     .section-des {
         font-weight: 400;
         font-size: 1rem;
+        width: auto;
+        text-align: center;
+        margin-left: auto;
+    }
+    .sponsor-companies{
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -272,7 +285,7 @@ main > section{
 
 
 
-@media screen and (min-width :993px) and (max-width :1440px) {
+@media screen and (min-width :993px) and (max-width :1583px) {
     .navbar{
         flex-direction: column;
     }
@@ -291,7 +304,7 @@ main > section{
     .facts-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 7.75rem;
+        gap: 1rem;
     }
     .section-title {
         Font-weight: 700;
