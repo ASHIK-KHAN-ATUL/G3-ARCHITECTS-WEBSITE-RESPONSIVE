@@ -204,6 +204,7 @@ main > section{
     .facts-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
     .section-title {
         Font-weight: 700;
@@ -224,6 +225,7 @@ main > section{
     .sponsor-companies {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
  
 }
@@ -256,7 +258,7 @@ main > section{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
-        margin-left: 10rem;
+        justify-items: center;
     }
     .section-title {
         Font-weight: 700;
@@ -264,6 +266,7 @@ main > section{
         width: auto;
         text-align: center;
         margin-left: auto;
+        
     }
     .section-des {
         font-weight: 400;
@@ -274,6 +277,7 @@ main > section{
     }
     .sponsor-companies{
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
 
 }
